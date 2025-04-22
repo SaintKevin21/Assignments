@@ -16,6 +16,47 @@ First the object is create in memory, then we call a constructor to initializes 
 Why is it important for a class to manage its resources (e.g., memory) during its lifecycle?
  Effective resource management ensures that the program runs efficiently, safely, and without resource-related issues.
 
+//Kevin Kangethe
+//Part B: Minimal Coding Example
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+//Prive creature class holding string(name), and float (health)
+class Creature{
+private:
+   string name;
+   float health;
+
+public:
+   //Constructor to creat Creature
+   Creature(string creatureName, float creatureHP)
+   : name(creatureName), health(creatureHP){
+       //Display the creation of of creation and health point
+       cout << "Creature " << name << "has been created with "
+       << health << " health points \n" << endl;
+   }
+   //Destructor
+   ~Creature (){
+       //Display the destrution of the creature clas
+       cout << "Creature " << name <<  "is being destoryed \n" << endl;
+   }
+   //Display the name and health
+void display () const {
+   cout << "Create Name " << name << " Health: " << health << endl;
+}
+};
+
+int main (){
+
+   Creature creature1 ("Godzilla " , 100000); //Create Goblin object
+   creature1.display(); // Object will be destoryed
+   return 0;
+}
+
+
 Part C: Reflection & Short-Answer
 Answer the following in a few sentences:
 Importance of Constructors:
