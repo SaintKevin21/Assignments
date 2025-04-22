@@ -16,5 +16,17 @@ First the object is create in memory, then we call a constructor to initializes 
 Why is it important for a class to manage its resources (e.g., memory) during its lifecycle?
  Effective resource management ensures that the program runs efficiently, safely, and without resource-related issues.
 
+Part C: Reflection & Short-Answer
+Answer the following in a few sentences:
+Importance of Constructors:
+How do constructors help ensure that an object starts its lifecycle in a valid state?
+Constructors helps ensure that an object starts its lifecycle first it starts by initializing its attributes, enforcing rules, and allocating relevant resources. This helps prevent problems and makes the class easier to use appropriately.
+Role of Destructors:
+Explain why destructors are necessary, especially in languages without automatic garbage collection.
+Destructors are necessary especially in languages without garbage collection, destructors are essential because they automate resource releases, appropriate memory management, stopping leaks, and preserving a program's stability and effectiveness
+     3. Lifecycle Management:
+What could happen if a class does not properly manage its resources during its lifecycle?
+A class does not properly manage its resources during its lifecycle it will result in exposing security flaws ,  memory leaks, resource exhaustion, system instability, lower performance, and challenging debugging. 
+
 
 
